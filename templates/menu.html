@@ -45,8 +45,10 @@
         <p>Goal Calorie: {{ gc }}</p>
         <p>Food: {{ f }}</p>
     </div>
+    <form method="post" action="{{ url_for('view_menu') }}">
+        <button type="submit" name="clear_button" value="clear">Clear</button>
+    </form>
     <form method="post" action="{{ url_for('get_advise') }}">
-        <button type="submit" name="clear_button">Clear</button>
         <button type="submit" name="get_advice">Get Advice</button>
     </form>
     
