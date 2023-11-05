@@ -1,0 +1,43 @@
+.menu-item {
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+#details {
+    display: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .menu-link {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu-link:hover {
+    background-color: #0056b3;
+}
+

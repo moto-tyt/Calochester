@@ -1,0 +1,28 @@
+<!-- templates/dish_details.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ dish_name }} Details</title>
+</head>
+<body>
+    <h1>{{ dish_name }}</h1>
+    <p><strong>Ingredients:</strong> {{ ingredients }}</p>
+    <p><strong>Calories:</strong> {{ calories }}</p>
+    <p><strong>Protein:</strong> {{ protein }}</p>
+
+    <!-- Add the form for submitting dish details -->
+    <form action="{{ url_for('add_dish') }}" method="post">
+        <input type="hidden" name="dish_name" value="{{ dish_name }}">
+        <input type="hidden" name="calories" value="{{ calories }}">
+        <input type="hidden" name="protein" value="{{ protein }}">
+        <button type="submit">Add</button>
+    </form>
+
+    <a href="/view-menu">Back to menu</a>
+
+</body>
+</html>
+
